@@ -8,40 +8,47 @@ body{
     width: auto;
 }
 header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
     background-color: #181616 ;
-    padding: 0;
-    margin: 0;
 }
 
 .footer{
+    position: sticky;
     background-color: #181616;
     width: 100%;
-    bottom: 0;
-    margin-top: 50px;
+    padding: 1.5rem;
+    padding-top: 5rem;
+    border: solid black;
 }
 .filtros{
     float: left;
     margin: 0;
     width: 180px;
-    height: 715px;
+    height: 100%;
     background-color: #692211 ;
     color: white;
     border: solid #181616 ;
+    position: fixed;
 }
 .acciones{
-    float: right;
+    position: fixed;
+    right: 0;
     margin: 0;
     width: 180px;
-    height: 715px;
+    height: 100%;
     background-color: #692211;
     color: white;
     border: solid #181616;
+
 }
 .general{
     margin-left: 180px;
     margin-right: 180px;
     height: 100%;
-    background-color: whitesmoke;
+    background-color: #181616;
     border: solid #181616 ;
     padding: 10px;
 }
@@ -104,8 +111,6 @@ li{
     margin-top: 3em;
     margin-bottom: 2em;
     overflow: hidden;
-    border: 6px solid;
-    border-color: #181616;
  }
  .frame-slider .card{
     display: flex;
@@ -155,15 +160,17 @@ se estable un inicio y un fin para cada animacion estos se miden en % y van de 0
    /* width: 100px;
     height: 200px;*/
     text-align: center;
-    border: solid #181616;
     background-color: crimson;
+    margin-top: 2em;
+    padding-bottom: 1em;
 }
 .general .card img{
     width: 100%;
     display: flex;
     justify-content: center;    
 }
- button{
+ .card button{
+    color: black;
     border-radius: 5px;
  }
 /*/////////////////////////////////////////// */
@@ -175,10 +182,11 @@ se estable un inicio y un fin para cada animacion estos se miden en % y van de 0
     margin-top: 3em;
     margin-bottom: 2em;
     overflow: hidden;
-    border: 6px solid;
-    border-color: #181616;
+    border: 2px solid;
+
  }
  .frame-slider2 .card{
+    padding-top: 10px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -196,4 +204,7 @@ se estable un inicio y un fin para cada animacion estos se miden en % y van de 0
  .frame-slider2 img{
     height: 100%;
     width: 100%;
+ }
+ .card p{
+    color:white ;
  }
