@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Eclipse Store</title>
+</head>
+
+<body>
+    <header>
+        <a href="./eclipse.html"><center><img src="./imagenes/logo_iconos/logo_eclipse.jpeg" width="400" height="75"></center></a>
+    </header>
+    <center><div>
+    <form action="base_eclipse.php" method="POST">
+        <p>
+            <label for="nombre">Nombres</label>
+            <input type="text" name="nombre" id="nombre" required="obligatorio" placeholder="Nombre(s)">
+        </p>
+    
+        <p>
+            <label for="apellido">apellidos</label>
+            <input type="apellido" name="apellido" id="apellido" required="obligatorio" placeholder="apellidos">
+    
+        </p>
+
+        <p>
+            <label for="nusuario">nombre de usuario</label>
+            <input type="text" name="nusuario" id="nusuario" required="obligatorio" placeholder="nusuario">
+        </p>
+
+        <p>
+            <label for="contrasena">contraseña</label>
+            <input type="text" name="contrasena" id="contrasena"  required="obligatorio" placeholder="contrasena">
+        </p>
+
+        <p>
+            <label for="correo">correo</label>
+            <input type="email" name="correo" id="correo" required="obligatorio" placeholder="correo">
+        </p>
+
+        <p>
+            <label for="celular">celular</label>
+            <input type="text" name="celular" id="celular" required="obligatorio" placeholder="3322364520">
+        </p>
+    
+    
+        <button type="submit" name="registrar" id="registrar"><p>registrar</p></button>
+        </form>
+    </div></center>    
+</body>
+</html>

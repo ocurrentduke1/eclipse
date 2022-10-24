@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: auto;
+    width: auto;
+}
+header{
+    background-color: #181616 ;
+    padding: 0;
+    margin: 0;
+}
+
+.footer{
+    background-color: #181616;
+    width: 100%;
+    bottom: 0;
+    margin-top: 50px;
+}
+.filtros{
+    float: left;
+    margin: 0;
+    width: 180px;
+    height: 715px;
+    background-color: #692211 ;
+    color: white;
+    border: solid #181616 ;
+}
+.acciones{
+    float: right;
+    margin: 0;
+    width: 180px;
+    height: 715px;
+    background-color: #692211;
+    color: white;
+    border: solid #181616;
+}
+.general{
+    margin-left: 180px;
+    margin-right: 180px;
+    height: 100%;
+    background-color: whitesmoke;
+    border: solid #181616 ;
+    padding: 10px;
+}
+.vision{
+    padding: 10px;
+}
+.mision{
+    padding: 10px;
+}
+.productos{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+ }
+.productos li{
+    text-decoration: none;
+    display: block;
+    color: white;
+    list-style: none;
+}
+.productos li ul{
+    display: none;
+    position: absolute;
+}
+.productos li:hover > ul{
+    display:block;
+}
+.productos li:hover{
+    background-color: #612010;
+}
+.sesion{
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+}
+.sesion li:hover{
+    background-color: #612010;
+}
+.info{
+    list-style: none;
+    color: white;
+ }
+
+.nosotros{
+    text-decoration:underline;
+    color: white;
+ }
+a{
+    text-decoration: none;
+    color: white;
+ }
+li{
+    padding: 2px;
+ }
+ .frame-slider{
+    width: 20vh;
+    height: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    overflow: hidden;
+    border: 6px solid;
+    border-color: #181616;
+ }
+ .frame-slider .card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
+ .frame-slider ul{
+    display: flex;
+    padding: 0;
+    width: 300%;
+    height: 100%;
+    animation: slide 7s infinite alternate;
+ }
+ .frame-slider li{
+    list-style: none;
+    width: 100%;
+ }
+ .frame-slider img{
+    height: 100%;
+    width: 100%;
+ }
+
+ 
+/*Definen los fotogramas de la secuencia de animacion
+se estable un inicio y un fin para cada animacion estos se miden en % y van de 0 a 100*/
+
+@keyframes slide{
+
+    /* imagen1 */
+    0%{margin-left: 0%;}                     /*inicio*/
+    40%{margin-left: 0%;}                    /*fin*/
+    /* imagen2 */
+    40%{margin-left: -100%;}
+    66%{margin-left: -100%;}
+    /* imagen3 */
+    66%{margin-left: -200%;}
+    100%{margin-left: -200%;}
+}
+
+.general {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.general .card {
+   /* width: 100px;
+    height: 200px;*/
+    text-align: center;
+    border: solid #181616;
+    background-color: crimson;
+}
+.general .card img{
+    width: 100%;
+    display: flex;
+    justify-content: center;    
+}
+ button{
+    border-radius: 5px;
+ }
+/*/////////////////////////////////////////// */
+ .frame-slider2{
+    width: 20vh;
+    height: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    overflow: hidden;
+    border: 6px solid;
+    border-color: #181616;
+ }
+ .frame-slider2 .card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
+ .frame-slider2 ul{
+    display: flex;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+ }
+ .frame-slider2 li{
+    list-style: none;
+    width: 100%;
+ }
+ .frame-slider2 img{
+    height: 100%;
+    width: 100%;
+ }
