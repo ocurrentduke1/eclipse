@@ -55,9 +55,15 @@ header{
     padding: 10px;
 }
 .vision{
+    color: antiquewhite;
     padding: 10px;
 }
 .mision{
+    color: antiquewhite;
+    padding: 10px;
+}
+.somos{
+    color: antiquewhite;
     padding: 10px;
 }
 .productos{
@@ -159,10 +165,12 @@ se estable un inicio y un fin para cada animacion estos se miden en % y van de 0
 }
 
 .general .card {
-   /* width: 100px;
-    height: 200px;*/
+    max-width: 210px;
+    min-width: 200px;
     text-align: center;
-    background-color: crimson;
+    background-color:  #d4400f ;
+    margin-left: 1em;
+    margin-right: 1em;
     margin-top: 2em;
     padding-bottom: 1em;
 }
@@ -172,6 +180,7 @@ se estable un inicio y un fin para cada animacion estos se miden en % y van de 0
     justify-content: center;    
 }
  .card button{
+    margin-top: 0.5em;
     color: black;
     border-radius: 5px;
  }
@@ -208,5 +217,6 @@ se estable un inicio y un fin para cada animacion estos se miden en % y van de 0
     width: 100%;
  }
  .card p{
+    margin-top: 5px;
     color:white ;
  }
