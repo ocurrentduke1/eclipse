@@ -184,6 +184,9 @@ se estable un inicio y un fin para cada animacion estos se miden en % y van de 0
     color: black;
     border-radius: 5px;
  }
+ .lregis{
+    color: white;
+ }
 /*/////////////////////////////////////////// */
  .frame-slider2{
     width: 20vh;
