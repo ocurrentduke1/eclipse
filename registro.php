@@ -1,15 +1,6 @@
 <?php
 
-$db_host="localhost";
-$db_user="root";
-$db_pasword="";
-$db_name="base_eclipse";
-
-$con = mysqli_connect ($db_host, $db_user, $db_pasword, $db_name);
-
-if(!$con){
-    die("Error" . mysqli_connect_error());
-}
+include 'com.php';
 
 $nombre = $_POST["nombre"];
 $apellido = $_POST["apellido"];
@@ -21,12 +12,16 @@ $celular = $_POST["celular"];
 $inser = "INSERT INTO registro (id, nombre, apellido, nusuario, contrasena, correo, celular)
 values ('0', '$nombre', '$apellido', '$nusuario', '$contrasena', '$correo', '$celular')";
 
-$ir = mysqli_query($con, $inser);
+$set_inser = mysqli_query($connect, $inser);
 
-if($ir){
-    echo "se ha registrado con existo";
+if($set_inser){
+    echo '<h3> te has registrado</h3>';
+    header('location:inicio_sesion.html');
 }else{
-    echo "hay un error";
+    header('location: registro_cuenta.html');
+    echo '<h3>Error en el registrode usuario</h3>';
 }
+
+mysqli_close($connect);
 
 ?>

@@ -12,6 +12,23 @@
     <header>
         <a href="./eclipse.html"><center><img src="./imagenes/logo_iconos/logo_eclipse.jpeg" width="400" height="75"></center></a>
     </header>
-        <h1>Inicio de sesion</h1>
+    <center><div>
+    <form action="login.php" method="POST">
+
+        <p>
+            <label class="lregis" for="nusuario">nombre de usuario</label>
+            <input type="text" name="nusuario" id="nusuario" required="obligatorio" placeholder="nusuario">
+        </p>
+
+        <p>
+            <label class="lregis" for="contrasena">contraseña</label>
+            <input type="text" name="contrasena" id="contrasena"  required="obligatorio" placeholder="contrasena">
+        </p>
+
+    
+    
+        <button type="submit" name="registrar" id="registrar"><p>registrar</p></button>
+        </form>
+    </div></center>    
 </body>
 </html>
