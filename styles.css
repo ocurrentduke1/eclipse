@@ -285,3 +285,22 @@ se estable un inicio y un fin para cada animacion estos se miden en % y van de 0
  .card2 h3{
     margin-top: 10px;
  }
+
+.fondo{
+   background-image: url(./imagenes/logo_iconos/fondo2.jpg);
+}
+.container{
+   border-radius: 5px;
+   display: flex;
+   justify-content: center;
+   margin-top: 15%;
+   padding: 30px 10px;
+   max-width: 15%;
+   background-color: #612010;
+   border: 5px #181616;
+}
+
+.container p{
+   padding-top: 10px;
+   padding-bottom: 5px
+}
