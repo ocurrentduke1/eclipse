@@ -15,11 +15,7 @@ values ('0', '$Tipo', '$nombre', '$Precio', '$Stock', '$imagen')";
 $set_inser = mysqli_query($connect, $inser);
 
 if($set_inser){
-    echo '<h3> se ha insertado el producto</h3>';
-    header('location: principal_admin.html');
-}else{
-    header('location: registro_productos.html');
-    echo '<h3>Error al registrar producto</h3>';
+    header('location: principal_admin.php');
 }
 
 mysqli_close($connect);
