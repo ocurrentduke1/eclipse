@@ -1,7 +1,7 @@
 <?php
 
 include("com.php");
-$con = conectar();
+
 
 $Tipo = $_POST["Tipo"];
 $nombre = $_POST["nombre"];

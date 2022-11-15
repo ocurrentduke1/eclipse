@@ -1,8 +1,8 @@
 <?php
 include("com.php");
 
-$sql="SELECT * FROM productos.php";
-$query= mysqli_query($connect, $sql);
+$sql="SELECT * FROM productos";
+$query= mysqli_query($con, $sql);
 
 $row = mysqli_fetch_array($query);
 ?>
@@ -58,10 +58,10 @@ $row = mysqli_fetch_array($query);
                                 <th> <?php echo $row['Tipo']?></th>
                                 <th> <?php echo $row['nombre']?></th>
                                 <th> <?php echo $row['Precio']?></th>
-                                <th> <?php echo $row['stock']?></th>
+                                <th> <?php echo $row['Stock']?></th>
                                 <th> <?php echo $row['imagen']?></th>
-                                <th><a href="actualizar.php?id <?php echo $row['nombre'] ?>" class="btn btn-info">editar</a></th>
-                                <th><a href="eliminar.php?id <?php echo $row['nombre'] ?>" class="btn btn-info">editar</a></th>
+                                <th><a href="actualizar.php?ID= <?php echo $row['id'] ?>" class="btn btn-info">editar</a></th>
+                                <th><a href="eliminar.php?ID= <?php echo $row['id'] ?>" class="btn btn-info">eliminar</a></th>
                             </tr>
                         <?php
                             }

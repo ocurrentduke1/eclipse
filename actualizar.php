@@ -1,11 +1,10 @@
 <?php
 
 include("com.php");
-$con = conectar();
 
-$id=$_GET["id"];
+$id=$_GET["ID"];
 
-$sql="SELECT * FROM productos WHERE nombre='$id'";
+$sql="SELECT * FROM productos WHERE id='$id'";
 $query= mysqli_query($con,$sql);
 
 $row=mysqli_fetch_array($query);
@@ -28,7 +27,7 @@ $row=mysqli_fetch_array($query);
 
     <div class="container mt-5">
         <form action="updete.php" method="POST">
-            <input type="hidden" name="nombre" value="<?php echo $row['nombre'] ?>">
+            <input type="hidden" name="ID" value="<?php echo $row['id'] ?>">
 
                 <input type="text" class="form-control mb-3" name="Tipo" value="<?php echo $row['Tipo'] ?>">
                 <input type="text" class="form-control mb-3" name="nombre" value="<?php echo $row['nombre'] ?>">

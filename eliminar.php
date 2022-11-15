@@ -1,11 +1,10 @@
 <?php
 
 include("com.php");
-$con = conectar();
 
-$nombre= $_GET['id'];
+$ID= $_GET['ID'];
 
-$sql="DELETE FROM productos WHERE nombre ='$nombre'";
+$sql="DELETE FROM productos WHERE id ='$ID'";
 $query=mysqli_query($con,$sql);
 
     if($query){
