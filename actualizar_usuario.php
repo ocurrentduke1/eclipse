@@ -4,7 +4,7 @@ include("com.php");
 
 $id=$_GET["ID"];
 
-$sql="SELECT * FROM productos WHERE id='$id'";
+$sql="SELECT * FROM registro WHERE id='$id'";
 $query= mysqli_query($con,$sql);
 
 $row=mysqli_fetch_array($query);
@@ -26,14 +26,15 @@ $row=mysqli_fetch_array($query);
     </header>
 
     <div class="container mt-5">
-        <form action="updete.php" method="POST">
+        <form action="update.php" method="POST">
             <input type="hidden" name="ID" value="<?php echo $row['id'] ?>">
 
-                <input type="text" class="form-control mb-3" name="Tipo" value="<?php echo $row['Tipo'] ?>">
                 <input type="text" class="form-control mb-3" name="nombre" value="<?php echo $row['nombre'] ?>">
-                <input type="text" class="form-control mb-3" name="Precio" value="<?php echo $row['Precio'] ?>">
-                <input type="text" class="form-control mb-3" name="Stock" value="<?php echo $row['Stock'] ?>">
-                <input type="text" class="form-control mb-3" name="imagen" value="<?php echo $row['imagen'] ?>">
+                <input type="text" class="form-control mb-3" name="apellido" value="<?php echo $row['apellido'] ?>">
+                <input type="text" class="form-control mb-3" name="nusuario" value="<?php echo $row['nusuario'] ?>">
+                <input type="text" class="form-control mb-3" name="contrasena" value="<?php echo $row['contrasena'] ?>">
+                <input type="text" class="form-control mb-3" name="correo" value="<?php echo $row['correo'] ?>">
+                <input type="text" class="form-control mb-3" name="celular" value="<?php echo $row['celular'] ?>">
             <input type="submit" class="btn btn-primary btn_block" value="actualizar">
         </form>
     </div>

@@ -15,11 +15,7 @@ values ('0', '$nombre', '$apellido', '$nusuario', '$contrasena', '$correo', '$ce
 $set_inser = mysqli_query($con, $inser);
 
 if($set_inser){
-    echo '<h3> te has registrado</h3>';
-    header('location:inicio_sesion.html');
-}else{
-    header('location: registro_cuenta.html');
-    echo '<h3>Error en el registrode usuario</h3>';
+    header('location: principal_admin.php');
 }
 
 mysqli_close($connect);
